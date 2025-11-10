@@ -1,0 +1,67 @@
+.services {
+    background: linear-gradient(135deg, #f9fafb 0%, #eef1f7 100%);
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e1e2f;
+    margin-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #ff7a00;
+    margin-bottom: 1rem;
+}
+
+.titleService {
+    color: #1e1e2f;
+    margin-bottom: 0.5rem;
+}
+
+.pDescription {
+    color: #4a4a5a;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cta {
+    margin-top: 3rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff7a00;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e96f00;
+}

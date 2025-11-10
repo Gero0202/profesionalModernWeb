@@ -1,0 +1,71 @@
+.footer {
+    background: linear-gradient(135deg, #f9fafb 0%, #eef1f7 100%);
+    border-top: 1px solid #ddd;
+    padding: 3rem 2rem;
+    color: #1e1e2f;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.brand h2 {
+    font-size: 1.8rem;
+    color: #ff7a00;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.brand p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.socials {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.icon {
+    color: #ff7a00;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+    color: #e96f00;
+}
+
+.contact p {
+    font-size: 0.95rem;
+    color: #4a4a5a;
+    margin: 0.2rem 0;
+}
+
+.copy {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        text-align: right;
+    }
+}

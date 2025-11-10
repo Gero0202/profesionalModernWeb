@@ -1,0 +1,144 @@
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f9fafb 0%, #eef1f7 100%);
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        padding: 6rem 8%;
+    }
+}
+
+.textContainer {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .textContainer {
+        text-align: left;
+    }
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1e1e2f;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #ff7a00;
+}
+
+.roles {
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+.role {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.description {
+    margin-top: 3.5rem;
+    font-size: 1.1rem;
+    color: #4a4a5a;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.primaryBtn {
+    background-color: #ff7a00;
+    color: white;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background-color: #e96f00;
+}
+
+.secondaryBtn {
+    border: 2px solid #ff7a00;
+    color: #ff7a00;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+    background: #fff4ec;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+    .imageContainer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.floatingShape {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 204, 153, 0.5);
+    border-radius: 50%;
+    filter: blur(5px);
+    mix-blend-mode: multiply;
+}
