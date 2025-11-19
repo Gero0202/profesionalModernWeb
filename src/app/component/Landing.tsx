@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "@/app/css/landing.module.css";
+import Link from "next/link";
 
 interface LandingProps {
     name: string;
@@ -62,19 +63,23 @@ export const Landing: React.FC<LandingProps> = ({
                 {/* BUTTONS */}
                 <div className={styles.buttons}>
                     <motion.a
-                        href="#projects"
+
                         whileHover={{ scale: 1.05 }}
                         className={styles.primaryBtn}
                     >
-                        {ctaPrimary}
+                        <Link href="/PageServices" className={styles.primaryLink}>
+                            {ctaPrimary}
+                        </Link>
                     </motion.a>
 
                     <motion.a
-                        href="#contact"
+
                         whileHover={{ scale: 1.05 }}
                         className={styles.secondaryBtn}
                     >
-                        {ctaSecondary}
+                        <Link href="/Contact" className={styles.secundaryLink}>
+                            {ctaSecondary}
+                        </Link>
                     </motion.a>
                 </div>
             </motion.div>

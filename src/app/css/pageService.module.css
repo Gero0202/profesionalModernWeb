@@ -1,0 +1,248 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem;
+  color: #1e1e2f;
+}
+
+/* Header intro */
+.header {
+  background: linear-gradient(135deg, #f9fafb 0%, #eef1f7 100%);
+  padding: 2.2rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+  margin-bottom: 2.5rem;
+}
+
+.headerInner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 0.6rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: #4a4a5a;
+  line-height: 1.6;
+}
+
+/* Grid of service cards */
+.gridSection {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+
+@media (min-width: 760px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.6rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 240px;
+}
+
+.cardIcon {
+  font-size: 2.2rem;
+  color: #ff7a00; 
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 122, 0, 0.08);
+  border-radius: 10px;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  color: #1e1e2f;
+  margin: 0;
+  font-weight: 700;
+}
+
+.cardText {
+  color: #4a4a5a;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cardButton {
+  display: inline-block;
+  background-color: #ff7a00;
+  color: #fff;
+  padding: 0.65rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.12s ease;
+  box-shadow: 0 8px 18px rgba(255, 122, 0, 0.08);
+}
+
+.cardButton:hover {
+  background-color: #e96f00;
+  transform: translateY(-3px);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.benefits {
+  margin-top: 2.5rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.benefitsTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 1rem;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto 1.25rem;
+}
+
+@media (min-width: 760px) {
+  .benefitsList {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.benefitItem {
+  background: linear-gradient(180deg, rgba(249,250,251,0.9), rgba(238,241,247,0.9));
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+}
+
+.benefitItem strong {
+  display: block;
+  color: #1e1e2f;
+  margin-bottom: 0.35rem;
+}
+
+.benefitItem span {
+  color: #4a4a5a;
+  font-size: 0.95rem;
+}
+
+.ctaWrap {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  background-color: #ff7a00;
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(255,122,0,0.08);
+}
+
+.ctaPrimary:hover {
+  background-color: #e96f00;
+}
+
+.ctaSecondary {
+  background-color: #fff;
+  color: #ff7a00;
+  border: 2px solid #ff7a00;
+  padding: 0.9rem 1.6rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.ctaSecondary:hover {
+  background-color: rgba(255,122,0,0.06);
+}
+
+.backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+  text-decoration: none;  
+  background-color: #ff6a00;
+  color: white;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  
+}
+
+.backButton:hover {
+  background-color: #e55e00; 
+  transform: scale(1.08);
+}
+
+
+
+@media (max-width: 420px) {
+  .title { font-size: 1.6rem; }
+  .card { min-height: 220px; }
+}

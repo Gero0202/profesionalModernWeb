@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FaStethoscope, FaClipboardList, FaUserMd } from "react-icons/fa"; // Ejemplo médico
 import styles from "@/app/css/service.module.css";
+import Link from "next/link";
 
 interface Service {
   icon: React.ReactNode;
@@ -75,9 +76,9 @@ export default function Service() {
           transition={{ type: "spring", stiffness: 300 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <a href="#proyectos" className={styles.button}>
+          <Link href="/PageServices" className={styles.button}>
             Ver más
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

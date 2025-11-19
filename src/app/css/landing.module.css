@@ -114,6 +114,16 @@
     .imageContainer {
         margin-top: 0;
         margin-bottom: 0;
+    } 
+}
+
+@media (max-width: 768px) {
+    .description{
+        margin-top: 5.5em;
+    }
+
+    .imageContainer{
+        margin-top: 0;
     }
 }
 
@@ -141,4 +151,14 @@
     border-radius: 50%;
     filter: blur(5px);
     mix-blend-mode: multiply;
+}
+
+.primaryLink{
+    text-decoration: none;
+    color: #f9fafb;
+}
+
+.secundaryLink{
+    text-decoration: none;
+    color: #ff7a00;
 }

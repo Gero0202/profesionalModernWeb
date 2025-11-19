@@ -1,0 +1,173 @@
+.container {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.heroText {
+    max-width: 550px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e1e2f;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    color: #4a4a5a;
+    line-height: 1.6;
+}
+
+.heroImgWrapper {
+    max-width: 380px;
+}
+
+.heroImg {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* BLOCKS */
+.block {
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: #1e1e2f;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* TIMELINE */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #ff7a00;
+}
+
+/* VALUES */
+.valuesGrid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .valuesGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.valueCard {
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.valueIcon {
+    font-size: 2.5rem;
+    color: #ff7a00;
+    margin-bottom: 0.8rem;
+}
+
+/* TRAYECTORIA */
+.trayectoriaList {
+    list-style: none;
+    padding: 0;
+    color: #444;
+    line-height: 1.7;
+}
+
+.trayectoriaList li {
+    margin-bottom: 0.8rem;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ff7a00;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.ctaButton:hover {
+    background: #e96f00;
+    transform: scale(1.05);
+}
+
+.backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+  text-decoration: none;  
+  background-color: #ff6a00; 
+  color: white;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  
+}
+
+.backButton:hover {
+  background-color: #e55e00; 
+  transform: scale(1.08);
+}

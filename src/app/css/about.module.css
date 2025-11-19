@@ -95,3 +95,9 @@
 .button:hover {
     background-color: #e96f00;
 }
+
+.linkButton{
+    text-decoration: none;
+    color: #f6f6f9;
+}
+

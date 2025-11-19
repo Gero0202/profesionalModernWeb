@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "@/app/css/about.module.css";
 import { ReactElement } from "react";
+import Link from "next/link";
 
 interface Highlight {
     icon: ReactElement;
@@ -64,12 +65,15 @@ export const About: React.FC<AboutProps> = ({
 
                 {ctaText && (
                     <motion.a
-                        href="#about"
+                        
                         className={styles.button}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
+                        <Link href="/AboutMe" className={styles.linkButton}>
+                        
                         {ctaText}
+                        </Link>
                     </motion.a>
                 )}
             </motion.div>

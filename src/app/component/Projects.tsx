@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "@/app/css/projects.module.css";
+import Link from "next/link";
 
 interface Project {
   image: string;
@@ -77,9 +78,9 @@ export default function ProjectsSection() {
           transition={{ type: "spring", stiffness: 300 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <a href="/proyectos" className={styles.button}>
+          <Link href="/Areas" className={styles.button}>
             Ver más información
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

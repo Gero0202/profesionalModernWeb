@@ -1,0 +1,177 @@
+.container {
+    position: relative;
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff6a00;
+    color: white;
+
+    font-size: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.backButton:hover {
+    background-color: #e55e00;
+    transform: scale(1.08);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 36px;
+    color: #222;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-bottom: 50px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 20px 22px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #eee;
+
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #ff6a00;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.iconCircle {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff4e9;
+    border: 1px solid #ffd1a6;
+    box-shadow: inset 0 0 12px rgba(255, 140, 0, 0.15);
+}
+
+.iconWhatsapp {
+    font-size: 28px;
+    color: #25d366;
+}
+
+.iconMail {
+    font-size: 30px;
+    color: #ff7a00;
+}
+
+.iconPhone {
+    font-size: 28px;
+    color: #1e1e2f;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+}
+
+.cardText {
+    font-size: 14px;
+    color: #555;
+    margin-top: 3px;
+}
+
+/* Formulario */
+.form {
+    background: white;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.formTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #ff6a00;
+}
+
+.textarea {
+    resize: none;
+    height: 130px;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 14px;
+    background: #ff6a00;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.submitButton:hover {
+    background: #e55e00;
+}

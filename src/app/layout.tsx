@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from 'next/font/google';
+import Head from "next/head";
 
 const poppins = Poppins({
   weight: ['400', '600', '700'],
@@ -9,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "New Pryoect",
+  title: "Dr. Juan Perez",
   description: "",
 };
 
