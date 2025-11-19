@@ -55,7 +55,7 @@ const Testimonials: React.FC = () => {
             whileHover={{ scale: 1.02 }}
           >
             <FaQuoteLeft className={styles.quoteIcon} />
-            <p className={styles.text}>"{t.text}"</p>
+            <p className={styles.text}>{t.text}</p>
             <div className={styles.info}>
               <h4>{t.name}</h4>
               <span>{t.role}</span>
